@@ -1,0 +1,700 @@
+{
+	"main":{
+		"buttons":{
+			"1":[
+				{
+					"text":"Меню",
+					"goto":"menu"
+				},
+				{
+					"text":"Связь с автором",
+					"goto":"authorCommunication"
+				}
+			],
+			"2":[
+				{
+					"text":"Подписка на новости",
+					"goto":"subscribe"
+				}
+			]
+		},
+		"text":"Вы в главном меню. По всем вопросам работы бота, а так же с предложениями добавления информации в него, можно нажать на кнопку \"Связь с автором\". Так же вы можете подписаться на новости нашего ЖК."
+	},
+	"main.menu":{
+		"buttons":{
+			"1":[
+				{
+					"text":"Наш ЖК",
+					"goto":"appartmentComplex"
+				},
+				{
+					"text":"Балашиха",
+					"goto":"balashikha"
+				}
+			],
+			"2":[
+				{
+					"text":"Магазины и Общетсвенные места",
+					"goto":"publicPlaces"
+				}
+			],
+			"3":[
+				{
+					"text":"Транспорт",
+					"goto":"transport"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+				}
+			]
+		},
+		"text":"Что будем смотреть?"
+	},
+	"main.menu.appartmentComplex":{
+		"text":"Здесь собрана информация о нашем ЖК.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Справочник",
+					"goto":"information"
+				},
+				{
+					"text":"Территория",
+					"goto":"territory"
+				}
+			],
+			"2":[
+				{
+					"text":"Магазины и инфраструктура",
+					"goto":"shopsAndInfrastructure"
+				}
+			],
+			"3":[
+				{
+					"text":"Дома и парковка",
+					"goto":"housesAndParking"
+				},
+				{
+					"text":"Прогулки",
+					"goto":"walks"
+					
+				}
+			],
+			"4":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.information":{
+		"text":"Информационный справочник ЖК \"Эдельвейс-Комфорт\"",
+		"buttons":{
+			"1":[
+				{
+					"text":"Телефоны",
+					"goto":"phones"
+				}
+			],
+			"2":[
+				{
+					"text":"Индекс",
+					"action":"postalCode"
+				}
+			],
+			"3":[
+				{
+					"text":"Адрес",
+					"action":"address"
+				}
+			],
+			"4":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.information.phones":{
+		"buttons":{
+			"1":[
+				{
+					"text":"ТСН",
+					"action":"tsn"
+				}
+			],
+			"2":[
+				{
+					"text":"Диспетчерская",
+					"action":"dispatcher"
+				}
+			],
+			"3":[
+				{
+					"text":"СВС-Связь",
+					"action":"internet"
+				}
+			],
+			"4":[
+				{
+					"text":"Диана (парковка)",
+					"action":"diana"
+				}
+			],
+			"5":[
+				{
+					"text":"Александр Александрович",
+					"action":"sanSan"
+				}
+			],
+			"6":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.territory":{
+		"text":"Тут пока нет информации. Вы можете поучаствовать в развитии проекта, добавив сюда информацию. Для этого напишите автору бота из главного меню.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.shopsAndInfrastructure":{
+		"text":"О чем хотим узнать подробнее?",
+		"buttons":{
+			"1":[
+				{
+					"text":"Паркинг",
+					"goto":"parking"
+				},
+				{
+					"text":"32 дом",
+					"goto":"32"
+				}
+			],
+			"2":[
+				{
+					"text":"30 дом",
+					"goto":"30"
+				},
+				{
+					"text":"28 дом",
+					"goto":"28"
+				}
+			],
+			"3":[
+				{
+					"text":"26 дом",
+					"goto":"26"
+				},
+				{
+					"text":"4 корпус",
+					"goto":"4"
+					
+				}
+			],
+			"4":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}		
+	},
+	"main.menu.appartmentComplex.shopsAndInfrastructure.parking":{
+		"text":"О паркинге и местах притяжения.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Паркинг",
+					"action":"parking"
+				},
+				{
+					"text":"Пекарня",
+					"action":"bakery"
+				}
+			],
+			"2":[
+				{
+					"text":"Автомойка",
+					"action":"carWash"
+				}
+			],
+			"3":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.shopsAndInfrastructure.32":{
+		"text":"Что есть в 32 доме?",
+		"buttons":{
+			"1":[
+				{
+					"text":"Стоматология",
+					"action":"stomatology"
+				},
+				{
+					"text":"Аптека",
+					"action":"pharmacy"
+				}
+			],
+			"2":[
+				{
+					"text":"Салон крастоы",
+					"action":"beautySaloon"
+				},
+				{
+					"text":"Магазин керамики",
+					"action":"ceramicsShop"
+				}
+			],
+			"3":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.shopsAndInfrastructure.30":{
+		"text":"Что есть в 30 доме?",
+		"buttons":{
+			"1":[
+				{
+					"text":"Магазин",
+					"action":"groceryStore"
+				}
+			],
+			"2":[
+				{
+					"text":"Детский клуб",
+					"action":"childClub"
+				}
+			],
+			"3":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.shopsAndInfrastructure.28":{
+		"text":"Что есть в 28 доме?",
+		"buttons":{
+			"1":[
+				{
+					"text":"Супермаркет",
+					"action":"superMarket"
+				}
+			]
+			"2":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.shopsAndInfrastructure.26":{
+		"text":"Что есть в 26 доме?",
+		"buttons":{
+			"1":[
+				{
+					"text":"Дом быта",
+					"action":"servicesHouse"
+				}
+			],
+			"2":[
+				{
+					"text":"Банк",
+					"action":"bank"
+				}
+			],
+			"3":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.shopsAndInfrastructure.4":{
+		"text":"Что есть в 4 корпусе?",
+		"buttons":{
+			"1":[
+				{
+					"text":"Фитнес-центр",
+					"action":"gym"
+				}
+			],
+			"2":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.housesAndParking":{
+		"text":"По задумке автора здесь должна быть общая информация о домах и паркинге, не вошедшая в другие разделы. Но фантазия на этом месте подкачала, так что подсказывайте :)",
+		"buttons":{
+			"1":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.appartmentComplex.walks":{
+		"text":"Места, где можно погулять",
+		"buttons":{
+			"1":[
+				{
+					"text":"Дворы",
+					"action":"yards"
+				},
+				{
+					"text":"Лес",
+					"action":"forest"
+				}
+			],
+			"2":[
+				{
+					"text":"Поле",
+					"action":"field"
+				},
+				{
+					"text":"Малашка",
+					"action":"malashka"
+				}
+			],
+			"3":[
+				{
+					"text":"Медвежъи озера",
+					"action":"lake"
+				}
+			],
+			"4":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.balashikha":{
+		"text":"Здесь в дальнейшем будет размещена информация о нашем городе. Прямо сейчас пока пусто, но вы можете помочь автору бота наполнить данный раздел.",
+		"buttons":{
+			"1":[
+				{
+					"text":"История",
+					"action":"hystory"
+				},
+				{
+					"text":"Город сейчас",
+					"action":"modernCity"
+				}
+			],
+			"2":[
+				{
+					"text":"Интересные места",
+					"action":"interestedPlaces"
+				}
+			],
+			"3":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.publicPlaces":{
+		"text":"Магазины и различные заведения, которые есть поблизости, но не в нашем ЖК.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Продукты",
+					"goto":"stores"
+				},
+				{
+					"text":"Аптеки",
+					"goto":"pharmacy"
+				}
+			],
+			"2":[
+				{
+					"text":"Рынки",
+					"goto":"markets"
+				},
+				{
+					"text":"Кафе",
+					"goto":"cafe"
+				}
+			],
+			"3":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.publicPlaces.stores":{
+		"text":"Магазины (продуктовые и не очень) за пределами нашего ЖК.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Нужен контент",
+					"action":"stores"
+				}
+			],
+			"2":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.publicPlaces.pharmacy":{
+		"text":"Аптеки поблизости.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Нужен контент",
+					"action":"pharmacy"
+				}
+			],
+			"2":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.publicPlaces.markets":{
+		"text":"Рынки нашего города.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Нужен контент",
+					"action":"markets"
+				}
+			],
+			"2":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	},
+	"main.menu.publicPlaces.cafe":{
+		"text":"Кафе в которых можно отдохнуть.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Нужен контент",
+					"action":"cafe"
+				}
+			],
+			"2":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	}
+	"main.menu.transport":{
+		"text":"В это разделе собрана информация о том, какой транспорт и куда ходит от нашего ЖК.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Куда можно уехать?",
+					"action":"whereWeGo"
+				}
+			],
+			"2":[
+				{
+					"text":"Щелковская",
+					"action":"shelkovskaya"
+				},
+				{
+					"text":"Новогиреево",
+					"action":"novogireevo"
+				}
+			],
+			"3":[
+				{
+					"text":"Курский вокзал",
+					"action":"kurskyTrainTerminal"
+				}
+			],
+			"4":[
+				{
+					"text":"Назад",
+					"action":"back"
+				},
+				{
+					"text":"Главное меню",
+					"goto":"main"
+					
+				}
+			]
+		}
+	}
+	"main.authorCommunication":{
+		"buttons":{
+			"1":[
+				{
+					"text":"Отправить",
+					"action":"send",
+				},
+				{
+					"text":"Отменить",
+					"action":"cansel",
+				}
+			],
+			"2":[
+				{
+					"text":"Главное меню",
+					"goto":"main"
+				}
+			]
+		},
+		"text":"Если хотите что то написать мне, то не стесняйтесь. Вы можете написать любое количество текста, отправив его в несколько приёмов. Чтобы я получил все, что вы напишете, после всего нажмите кнопку \"Отправить\". Или \"Отменить\", если передумаете"
+	},
+	"main.subscribe":{
+		"text":"Если Вы подпишетесь на новости, то раз в неделю бот будет отправлять Вам свежие новости нашего ЖК, чтобы Вы всегда могли оставаться в курсе последних событий. Вы в любой момент можете отписаться от новостей на этой же странице. Если Вы хотите предложить свою новость, то воспользуйтесь формой связи с автором.",
+		"buttons":{
+			"1":[
+				{
+					"text":"Подписаться",
+					"action":"subscribe",
+				},
+				{
+					"text":"Отписаться",
+					"action":"unsubscribe",
+				}
+			],
+			"2":[
+				{
+					"text":"Главное меню",
+					"goto":"main"
+				}
+			]
+		}
+	}
+}
